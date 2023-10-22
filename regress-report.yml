@@ -26,7 +26,8 @@ test-cases:
 
   - summary:
       Фильтрация товара по отрицательной цене
-     status: fall
+     status: pass
+
 
   - summary:
       Замена Языка
