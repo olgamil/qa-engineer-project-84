@@ -1,0 +1,50 @@
+---
+test-cases:
+  - summary:
+      Поиск товара по ключевому слову
+    status: pass
+
+  - summary:
+      Поиск товара по категории
+    status: pass
+
+  - summary:
+      Фильтрация товара по нескольким Брендам
+    status: pass
+
+  - summary:
+      Просмотр каталога товаров
+    status: pass
+
+  - summary:
+      Просмотр корректной информации о товаре
+    status: pass
+
+  - summary:
+      Добавление товара в корзину
+    status: pass
+
+  - summary:
+      Фильтрация товара по отрицательной цене
+     status: fall
+
+  - summary:
+      Замена Языка
+    status: pass
+
+  - summary:
+      Удаление товара из корзины
+    status: pass
+
+  - summary:
+      Корректная работа двух фильтров одновременно
+    status: pass
+
+  - summary:
+      Проверка содержания заказа
+    status: pass
+
+bugreports: []
+      
+    
+    
