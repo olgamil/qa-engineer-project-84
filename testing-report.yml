@@ -25,7 +25,7 @@
 
 - summary:
     Фильтация товара по отрицательной цене
-  status:  fail
+  status:  pass
 
 - summary:
     Замена Языка
