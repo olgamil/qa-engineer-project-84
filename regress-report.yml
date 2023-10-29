@@ -17,7 +17,7 @@ test-cases:
     status: pass
 
   - summary:
-      Просмотр корректной информации о товаре
+      Просмотр подробной информации о товаре
     status: pass
 
   - summary:
@@ -26,25 +26,67 @@ test-cases:
 
   - summary:
       Фильтрация товара по отрицательной цене
-    status: pass
+    status: fail
 
   - summary:
       Замена Языка
-    status: pass
+    status: fail
 
   - summary:
-      Удаление товара из корзины
+      Удаление товара из корзины с помощью кнопки Delete
     status: pass
 
   - summary:
       Корректная работа двух фильтров одновременно
-    status: pass
+    status: fail
 
   - summary:
       Проверка содержания заказа
     status: pass
 
-bugreports: []
+  - summary:
+      Проверка оформления заказа
+    status: fail
+
+  - summary:
+      Удаление товара из корзины с помощью кнопки Clear cart
+    status: pass
+
+  - summary:
+      Возврат в каталог товаров из корзины с помощью кнопки Continue shopping
+    status: pass
+
+  - summary:
+      Проверка работы счетчика количества товаров в наличии в магазине
+    status: fail
+
+  - summary:
+      Возврат в католог с помощью кнопки Store
+    status: pass
+
+  - summary:
+      Закрытие оформленного заказа с помощью кнопки Кркстик
+    status: fail
+
+  - summary:
+      Закрытие оформленного заказа с помощью кнопки Close
+    status: pass
+
+bugreports: 
+  - summary:
+      Не корректное отображение информации в каталоге при использовании одновременно двух фильтров
+    environment:
+      Chrome Версия 118.0.5993.118 (Официальная сборка), (64 бит)
+      Microsoft Windows Version 10.0.19045.3570
+    steps-to-reproduce:
+      1. Открыть каталог товаров
+      2. Выбрать категорию
+      3. Выбрать Производителя не подходящего под данную категорию
+    expected-result:
+      Появляется сообщение Nothing found!
+    actual-result:
+      Отображается полный перечень товара данной страницы в каталоге
+      
       
     
     
