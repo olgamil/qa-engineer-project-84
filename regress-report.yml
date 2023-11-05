@@ -72,8 +72,9 @@ bugreports:
       Microsoft Windows Version 10.0.19045.3570
     steps-to-reproduce:
       1. Открыть страницу каталога товаров
+      2. Нажать на dropdown Category
       2. Выбрать категорию
-      3. Выбрать Производителя не подходящего под данную категорию
+      3. Нажать на checkbox Brand не подходящего под данную категорию
     expected-result:
       Появляется сообщение что ничего не найдено
     actual-result:
@@ -87,9 +88,9 @@ bugreports:
       Microsoft Windows Version 10.0.19045.3570
     steps-to-reproduce:
       1. Открыть страницу каталога товаров
-      2. Нажать accordeon категория товара
+      2. Нажать на dropdown Category
       3. Выбрать категорию
-      4. Нажать accordeon категория товара
+      4. Нажать на dropdown Category
       5. Выбрать пустую строку
       6. Нажать кнопку для перехода на следующую страницу
     expected-result:
